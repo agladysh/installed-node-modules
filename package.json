@@ -6,7 +6,10 @@
   "license": "MIT",
   "type": "commonjs",
   "main": "./src/index.cjs",
-  "exports": "./src/index.cjs",
+  "exports": {
+    "types": "./src/index.d.ts",
+    "default": "./src/index.cjs"
+  },
   "types": "./src/index.d.ts",
   "files": [
     "src/",
