@@ -1,0 +1,55 @@
+{
+  "name": "installed-node-modules",
+  "description": "Discover all importable Node.js modules including built-ins, installed packages, and workspace packages",
+  "version": "1.0.0",
+  "author": "Alexander Gladysh <agladysh@gmail.com>",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "./src/index.cjs",
+  "exports": "./src/index.cjs",
+  "types": "./src/index.d.ts",
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agladysh/installed-node-modules.git"
+  },
+  "bugs": "https://github.com/agladysh/installed-node-modules/issues",
+  "homepage": "https://github.com/agladysh/installed-node-modules#readme",
+  "keywords": [
+    "node",
+    "modules",
+    "packages",
+    "discovery",
+    "installed",
+    "require",
+    "import",
+    "workspace",
+    "builtin"
+  ],
+  "scripts": {
+    "test": "node test/smoke.js",
+    "lint": "eslint . && prettier --check .",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier --check .",
+    "fix": "eslint --fix . && prettier --write .",
+    "fix:eslint": "eslint --fix .",
+    "fix:prettier": "prettier --write ."
+  },
+  "dependencies": {
+    "glob": "^11.0.3",
+    "yaml": "^2.8.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "eslint": "^9.16.0",
+    "globals": "^15.14.0",
+    "prettier": "^3.4.2"
+  }
+}

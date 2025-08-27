@@ -1,0 +1,9 @@
+assert_lefthook_installed: true
+pre-commit:
+  parallel: true
+  commands:
+    prettier:
+      run: npm exec prettier -- --check {staged_files} # We call prettier directly as package.json scripts feed . as path
+    eslint:
+      glob: '*.{js,cjs,mjs}'
+      run: npm run lint:eslint {staged_files}

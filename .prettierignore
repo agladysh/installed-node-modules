@@ -1,0 +1,7 @@
+pnpm-lock.yaml
+.env.example
+.gitignore
+.prettierignore
+.editorconfig
+.markdownlintignore
+*.txt
