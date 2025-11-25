@@ -46,7 +46,7 @@
     "fix:prettier": "prettier --write ."
   },
   "dependencies": {
-    "glob": "^11.0.3",
+    "glob": "^11.1.0",
     "yaml": "^2.8.1"
   },
   "devDependencies": {
